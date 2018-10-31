@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:maxHeight="150dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxHeight="150dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/multiple_choice_ctrl_tv_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/multiple_choice_bg_states"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            android:gravity="start|center_vertical"
+            android:padding="10dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/multiple_choice_ctrl_lv_opt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/multiple_choice_bg"
+            android:padding="2dp"
+            android:orientation="vertical"
+            tools:listitem="@android:layout/simple_list_item_checked"
+            />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
